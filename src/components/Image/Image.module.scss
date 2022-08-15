@@ -1,0 +1,62 @@
+.imgWrapper {
+  overflow: hidden;
+  transition: 150ms ease-in-out;
+  position: relative;
+
+  &.small {
+    width: 36px;
+    height:36px;
+  }
+  &.medium {
+    width: 150px;
+    height: 150px;
+  }
+  &.large {
+    width: 200px;
+    height: 200px;
+  }
+  &.circle {
+    border-radius: 100%;
+    &.hoverTint {
+      border-radius: 100%;
+    }
+  }
+  &.rectangle {
+    border-radius: 2px;
+  }
+  &.border {
+    border: 2px solid slategray;
+  }
+  &.block {
+    width: 100%;
+  }
+  &.hoverable {
+    cursor: pointer;
+    .hoverTint {
+      display: block;
+      // width: 100%;
+      // height: 100%;
+      background-color: slategray;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transition: 150ms ease-in-out;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+    }
+    &:hover > .hoverTint {
+      opacity: 0.5;
+    }
+  }
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,32 @@
+.twitText {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.actionsWrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.linkWrapper {
+  text-decoration: none;
+  color: black;
+}
+
+.userLink {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+  .emailText {
+    font-size: 12px;
+    color: slategray;
+  }
+}

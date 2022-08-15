@@ -1,0 +1,102 @@
+.btn {
+	padding: 10px 25px;
+	border-radius: 4px;
+	font-size: 16px;
+	transition: 150ms ease-in-out;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	border: 1px solid transparent;
+
+	svg {
+		margin-right: 4px;
+	}
+
+	&.fab {
+		border-radius: 100%;
+		padding: 10px;
+		font-size: 18px;
+
+		svg {
+			margin: 0;
+		}
+	}
+
+	&:disabled {
+		opacity: 0.5;
+		cursor: not-allowed;
+	}
+}
+
+.regular {
+	color: slategray;
+	background-color: snow;
+
+	&:hover {
+		background-color: slategray;
+		color: snow;
+	}
+
+	&.primary {
+		background-color: slateblue;
+		color: snow;
+
+		&:hover {
+			background-color: darken(slateblue, 5%);
+		}
+	}
+
+	&.secondary {
+		background-color: tomato;
+		color: snow;
+
+		&:hover {
+			background-color: darken(tomato, 5%);
+		}
+	}
+}
+
+.outline {
+	border-color: slategray;
+	color: slategray;
+	background-color: transparent;
+
+	&:hover {
+		background-color: slategray;
+		color: snow;
+	}
+
+	&.primary {
+		color: slateblue;
+		border-color: slateblue;
+
+		&:hover {
+			background-color: slateblue;
+			color: snow;
+		}
+	}
+
+	&.secondary {
+		color: tomato;
+		border-color: tomato;
+
+		&:hover {
+			color: snow;
+			background-color: tomato;
+		}
+	}
+}
+
+.loadingIcon {
+	animation: loading 1s ease-in-out infinite forwards;
+}
+
+@keyframes loading {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}

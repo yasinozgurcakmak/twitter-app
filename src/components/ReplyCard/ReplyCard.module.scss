@@ -1,0 +1,21 @@
+.replyText{
+    margin: 15px 0;
+}
+
+.userLink{
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+    &:hover{
+        text-decoration: underline;
+    }
+    .emailText{
+        font-size: 12px;
+        color: slategray;
+    }
+}

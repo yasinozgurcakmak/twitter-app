@@ -1,0 +1,40 @@
+.card {
+  border-radius: 4px;
+  margin: 10px 0;
+  background-color: white;
+  cursor: pointer;
+  &.shadow {
+    box-shadow: 0 4px 8px -4px black;
+  }
+  &.hover {
+    transition: 100ms all ease-in-out;
+    &:hover {
+      box-shadow: 0 4px 12px -4px black;
+    }
+  }
+  &.padding {
+    padding: 20px;
+  }
+
+  &.border {
+    border: 1px solid slategray;
+  }
+  &.relative {
+    position: relative;
+  }
+}
+@media only screen and (max-width: 1320px) {
+  .card {
+    width: 800px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .card {
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .card {
+    width: 500px;
+  }
+}

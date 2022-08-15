@@ -1,0 +1,52 @@
+.wrapper {
+  // margin-bottom: 40px;
+}
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 60px;
+}
+.fileInput {
+  display: none;
+}
+.profileImg {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  transform: translateY(-50%);
+}
+.usernameText {
+  font-size: 36px;
+}
+
+.emailText {
+  font-weight: normal;
+  color: slategray;
+  margin: 0 0 15px;
+}
+
+.userInfo {
+  svg {
+    color: slategray;
+    margin-right: 8px;
+  }
+
+  .bioText {
+    margin-bottom: 10px;
+  }
+
+  .birthdayText,
+  .locationText {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+
+  .birthdayText {
+    margin-bottom: 5px;
+  }
+}
+.profileContentWrapper{
+  margin: 40px 0;
+}

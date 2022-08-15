@@ -1,0 +1,18 @@
+.followCard {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+
+	.contentWrapper {
+		flex-grow: 1;
+
+		.username {
+			font-size: 14px;
+		}
+
+		.email {
+			font-size: 12px;
+			color: slategray;
+		}
+	}
+}

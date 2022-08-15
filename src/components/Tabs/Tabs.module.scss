@@ -1,0 +1,29 @@
+.tabsWrapper {
+	display: flex;
+
+	.tab {
+		flex: 1;
+		display: flex;
+
+		label {
+			flex: 1;
+			padding: 10px;
+			transition: 150ms ease-in-out;
+			cursor: pointer;
+			text-align: center;
+
+			&:hover {
+				background-color: rgba(slateblue, 0.4);
+			}
+		}
+
+		input {
+			display: none;
+		}
+
+		input:checked + label {
+			background-color: slateblue;
+			color: snow;
+		}
+	}
+}

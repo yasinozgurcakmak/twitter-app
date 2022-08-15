@@ -1,0 +1,37 @@
+.formGroup {
+	margin: 15px 0;
+
+	label {
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+	input,
+	textarea {
+		border-radius: 4px;
+		border: 1px solid slategray;
+		padding: 10px 15px;
+		display: block;
+		width: 100%;
+		transition: 150ms ease-in-out;
+
+		&:focus {
+			border-color: slateblue;
+		}
+
+		&:disabled {
+			opacity: 0.5;
+			cursor: not-allowed;
+		}
+	}
+
+	textarea {
+		resize: vertical;
+		height: 100px;
+	}
+}
+
+.errorMsg {
+	font-size: 13px;
+	color: crimson;
+}
